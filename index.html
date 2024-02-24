@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Sayali Bhosale</div>
+            <div> 
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Sayali Bhosale</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic-3.png" alt="Sayali Bhosale profile pricture"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Sayali Bhosale</h1>
+                <p class = "section__text__p2">A Passionate Software Engineer With Growth Mindset</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                        Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/bhosale-sayali/', '_blank')"/>
+                    <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/SayaliBhosale16', '_blank')"/>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="text-container">
+                        <p style="text-align: justify;">I am a computer science student with a love for coding, problem-solving and continuous learning. I'm eager to explore different domains and make an impact through my coding expertise.
+                        Proficient in Java, Python and database management systems like MySQL and NoSQL with deep understanding of distributed systems and computer networking.
+                        </p>
+                    </div>
+                    <div class="about-containers">
+                        <!-- <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                            <h3>Experience</h3>
+                            <p>2+ years <br/>Software Development</p>
+                        </div> -->
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>University Central Florida : M.S. in Computer Science</p>
+                            <p>University of Pune : B.E. in Computer Science</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        </section>
+        <!-- <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Accenture</h2>
+                        <div class="article-container">
+                            <p class = "section__text__p2">Associate Software Engineer, Aug'21 - Aug'22</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Developed and deployed RESTful APIs for capturing and processing payment and refund records using Spring Boot, ensuring scalability and reliability resulting to 25% increase in transaction processing efficiency.</li>
+                                <li>Utilized Postman for manual and Karate for automated API testing, ensuring endpoint functionality and robustness.</li>
+                                <li>Integrated Azure Cosmos DB to streamline database operations, optimizing data retrieval and storage.</li>
+                                <li>Collaborated with cross-functional teams to design and implement CI/CD pipelines, facilitating seamless integration and deployment processes.</li>
+                                <li>Technologies- Java, Spring Boot, RESTful API, Postman, Azure Cosmos DB, Jenkins, Jira</li>
+
+
+
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">University Central Florida</h2>
+                        <div class="article-container">
+                            <p class = "section__text__p2">Graduate Teaching Assistant, Jan'23 - Present</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Course: UCF COP 4600: Operating Systems, COP 5611: Operating Systems and File Design.</li>
+                                <li>Providing prompt and in-depth feedback to students, helping students to solidify understanding of core concepts,collaborating with other instructors to develop course materials for functional programming language.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+        </section> -->
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">University Central Florida</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Graduate Teaching Assistant, Jan'23 - Present</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Course: UCF COP 4600 & COP 5611: Operating Systems</li>
+                                <li>Assisted in developing course materials, including assignments, lab exercises, and exams. Also, helped the professor conducting labs.</li>
+                                <li>Mentored the students in understanding concepts related to process management, memory management, file systems, and networking.</li>
+                                <li>Graded 200+ assignments, projects, and exams each semester to provide constructive feedback to students.</li>
+                                <li>Facilitated review sessions and office hours to assist students with course content and assignments, leading to a 30% decrease in resubmissions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Add another details-container for the second experience -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Accenture</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Associate Software Engineer, Aug'21 - Aug'22</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Developed and deployed RESTful APIs for capturing and processing payment and refund records using Spring Boot, ensuring scalability and reliability resulting in a 25% increase in transaction processing efficiency.</li>
+                                <li>Utilized Postman for manual and Karate for automated API testing, ensuring endpoint functionality and robustness.</li>
+                                <li>Integrated Azure Cosmos DB to streamline database operations, optimizing data retrieval and storage.</li>
+                                <li>Collaborated with cross-functional teams to design and implement CI/CD pipelines, facilitating seamless integration and deployment processes.</li>
+                                <li>Technologies: Java, Spring Boot, RESTful API, Postman, Azure Cosmos DB, Jenkins, Jira</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <!-- Additional containers for two more experiences -->
+                <div class="about-containers">
+                    <div class="details-container">
+                        <!-- Content for the third experience -->
+                        <h2 class="experience-sub-title">The Magic Data</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Data Modeler Intern, May'21 - Jun'21</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Conducted exploratory data analysis on extensive time series datasets with 2000 rows, identifying trends and patterns in Bitcoin prices and associated market variables.</li>
+                                <li>Created Bitcoin price prediction models employing statistical techniques and machine learning algorithms, yielding forecasting accuracy of up to 93%. </li>
+                                <li>Also, designed analytical dashboards using Tableau to effectively communicate the derived insights.</li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <!-- Content for the fourth experience -->
+                        <h2 class="experience-sub-title">Iogreen Solutions</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Software Development Intern, Oct'20 - Jan'21</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Built 30 user-friendly screens using HTML, CSS, and JavaScript, constituting 40% of the entire Logistic Management project and integrating APIs for enhanced functionality, contributing to a threefold increase in user accessibility.</li>
+                                <li>Designed custom graphics, integrated interactive features, and devised responsive layouts, leading to a threefold increase (300%) in user accessibility.</li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+        </section>
+        
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Bitcoin Price Prediction</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/SayaliBhosale16/Machine_Learning/tree/main/Bitcoin_Price_Prediction', '_blank')" >Github</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">E-commerce Platform</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/SayaliBhosale16/Developer', '_blank')">Github</button>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">CI/CD Pipeline using AWS for CommunityConnect</h2>
+                        <div class="btn-container">
+                            
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/SayaliBhosale16', '_blank')">Github</button>
+
+                            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mrunalpatil1198/AWSPipelineForCommunityConnect', '_blank')">Github</button> -->
+
+                            
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Civil Complaints Management System</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/SayaliBhosale16/ComplaintsWizard', '_blank')">Github</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                    <p><a href="mailto:sayali.bhosale@ucf.edu">sayali.bhosale@ucf.edu</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                    <p><a href="https://www.linkedin.com/in/bhosale-sayali/" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Sayali Bhosale. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -22,8 +22,6 @@ export function VisitorCount() {
     fetchCount();
   }, []);
 
-  if (count === null) return null;
-
   return (
     <div className="flex items-center justify-center gap-2 mt-3">
       <span
@@ -31,7 +29,7 @@ export function VisitorCount() {
         style={{ background: "#22c55e" }}
       />
       <p className="text-xs" style={{ color: "var(--text-faint)" }}>
-        {count.toLocaleString()} visitors
+        {count !== null ? `${count.toLocaleString()} visitors` : "Tracking visitors"}
       </p>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { profile } from "../data/profile";
 import { useInView } from "../hooks/useInView";
+import { VisitorCount } from "./VisitorCount";
 
 export function Contact() {
   const { ref, isVisible } = useInView(0.1);
@@ -245,7 +246,7 @@ export function Contact() {
                   Based in
                 </p>
                 <p className="text-sm" style={{ color: "var(--text-primary)" }}>
-                  Orlando, Florida
+                  United States
                 </p>
               </div>
             </div>
@@ -257,6 +258,7 @@ export function Contact() {
           <p className="text-sm" style={{ color: "var(--text-faint)" }}>
             © 2026 Sayali Bhosale · Built with React + TypeScript + Tailwind
           </p>
+          <VisitorCount />
         </div>
       </div>
     </section>

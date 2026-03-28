@@ -11,6 +11,7 @@ import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { Certifications } from "./components/Certifications";
 import { Contact } from "./components/Contact";
+import { GitHubStats } from "./components/GitHubStats";
 import { SectionDivider } from "./components/SectionDivider";
 import "./index.css";
 
@@ -27,13 +28,15 @@ function App() {
         <SectionDivider />
         <PillarSelector />
         <SectionDivider />
-        <Skills />
-        <SectionDivider />
         <Experience />
         <SectionDivider />
         <Projects />
         <SectionDivider />
+        <Skills />
+        <SectionDivider />
         <Certifications />
+        <SectionDivider />
+        <GitHubStats />
         <SectionDivider />
         <Contact />
       </main>

@@ -1,5 +1,12 @@
 import { profile } from "../data/profile";
 
+function getGreeting(): string {
+  const hour = new Date().getHours();
+  if (hour < 12) return "Good morning";
+  if (hour < 17) return "Good afternoon";
+  return "Good evening";
+}
+
 export function Hero() {
   return (
     <section
@@ -50,6 +57,14 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Greeting */}
+        <p
+          className="text-sm mb-4 animate-fade-in"
+          style={{ color: "var(--text-muted)" }}
+        >
+          {getGreeting()}, welcome to my portfolio
+        </p>
+
         {/* Tagline */}
         <p
           className="text-xs tracking-[0.3em] uppercase mb-8 animate-fade-in"

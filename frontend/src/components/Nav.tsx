@@ -3,9 +3,9 @@ import { useTheme } from "../context/ThemeContext";
 
 const sections = [
   { id: "pillars", label: "About" },
-  { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
 ];
 

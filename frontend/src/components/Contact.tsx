@@ -246,7 +246,7 @@ export function Contact() {
                   Based in
                 </p>
                 <p className="text-sm" style={{ color: "var(--text-primary)" }}>
-                  United States
+                  United States & India
                 </p>
               </div>
             </div>

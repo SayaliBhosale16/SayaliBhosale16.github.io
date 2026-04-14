@@ -12,6 +12,39 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Freight Analytics Engine",
+    pillars: ["ml-ai", "backend", "devops"],
+    techStack: ["Python", "FastAPI", "scikit-learn", "Docker", "SQLite", "GitHub Actions"],
+    description:
+      "Production-grade dual-model ML system for freight cost prediction and invoice risk flagging — with model versioning, automated retraining, and an observability dashboard.",
+    metric: "R² 0.97 freight · F1 0.82 risk · 17 tests",
+    github: "https://github.com/SayaliBhosale16/freight-invoice-ai-system",
+    details: [
+      "Dual-model design: Linear Regression for freight cost (MAE 24.11, R² 0.97) + Random Forest w/ GridSearchCV for invoice risk (F1 0.82, ROC-AUC 0.87, Precision 96%)",
+      "JSON-based model registry with versioned artifacts — auto-promotes retrained models only when metrics exceed threshold",
+      "FastAPI serving layer with single + batch endpoints, Pydantic schemas, and SQLite-backed prediction logging",
+      "Observability dashboard at /dashboard with live prediction testers, hourly activity charts, and drift detection (2σ mean shift)",
+      "SQL-based feature engineering (CTE aggregations across purchase orders) to flag PO/invoice mismatches and slow receiving",
+      "Dockerized with docker-compose + GitHub Actions CI (lint, test, Docker build), 17 passing pytest tests",
+    ],
+  },
+  {
+    title: "RAG AI Agent",
+    pillars: ["ml-ai", "backend"],
+    techStack: ["FastAPI", "LlamaIndex", "Qdrant", "HuggingFace", "Inngest", "PyTorch"],
+    description:
+      "Fully local RAG pipeline that answers questions over uploaded PDFs — orchestrated with Inngest for event-driven ingestion, retries, and observability. No OpenAI required.",
+    metric: "Local LLM · event-driven pipeline",
+    github: "https://github.com/SayaliBhosale16/RAG-AI-Agent",
+    details: [
+      "End-to-end RAG: PDF → LlamaIndex SentenceSplitter (1000/200 overlap) → all-MiniLM-L6-v2 embeddings → Qdrant cosine search → Qwen2.5-1.5B-Instruct answer generation",
+      "Inngest orchestrates the ingest + query pipelines with step functions, automatic retries, and a dashboard for monitoring runs",
+      "FastAPI REST endpoints for upload, query, and document clearing — plus a dark-themed single-page frontend",
+      "Runs entirely on local GPU (MPS/CUDA) — no third-party LLM API keys or OpenAI dependency",
+      "Source-grounded answers with file references returned alongside each response",
+    ],
+  },
+  {
     title: "IoT Anomaly Detection",
     pillars: ["ml-ai", "backend"],
     techStack: ["Python", "FastAPI", "scikit-learn", "MongoDB", "Tableau"],

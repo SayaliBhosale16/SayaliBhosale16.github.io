@@ -20,7 +20,7 @@ export const skills: SkillGroup[] = [
   {
     category: "Backend",
     items: [
-      "FastAPI", "Flask", "Spring Boot", "REST APIs", "gRPC", "WebSockets",
+      "FastAPI", "Flask", "Spring Boot", "REST APIs", "gRPC", "WebSockets", "Pydantic",
       "Microservices", "Service-Oriented Architecture", "Distributed Systems", "Design Patterns",
       "OAuth2 / JWT", "RBAC",
     ],
@@ -29,10 +29,12 @@ export const skills: SkillGroup[] = [
   {
     category: "AI & ML",
     items: [
-      "LangChain", "LLM Agent Systems", "RAG Pipelines", "Prompt Engineering",
-      "ChromaDB", "HuggingFace", "Llama 3.1",
-      "Claude Code (Anthropic)", "Cursor",
+      "LangChain", "LlamaIndex", "LLM Agent Systems", "RAG Pipelines", "Prompt Engineering",
+      "ChromaDB", "Qdrant", "HuggingFace", "Sentence Transformers", "PyTorch",
+      "Llama 3.1", "Qwen 2.5",
+      "Claude Code (Anthropic)", "Cursor", "Inngest",
       "Scikit-learn", "Keras", "Transfer Learning", "Fine-Tuning",
+      "MLOps (Model Registry, Drift Detection)",
       "Anomaly Detection", "NLP (NLTK, spaCy)", "Classification & Regression",
       "Model Evaluation & Selection",
     ],

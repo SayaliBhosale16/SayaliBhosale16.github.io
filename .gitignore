@@ -26,3 +26,6 @@ coverage/
 
 # Vite
 *.local
+
+# Local-only agent source of truth
+CLAUDE.md

@@ -72,7 +72,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Analytics & BI",
-    items: ["Power BI", "DAX", "Tableau", "Pandas", "NumPy", "Matplotlib", "Seaborn", "SAS", "SPSS"],
+    items: ["Power BI", "Tableau", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
     pillars: ["ml-ai"],
   },
   {

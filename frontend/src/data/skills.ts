@@ -9,7 +9,7 @@ export interface SkillGroup {
 export const skills: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["Python", "TypeScript (ES6+)", "JavaScript", "Java", "SQL", "C#", ".NET", "C++", "HTML/CSS", "R"],
+    items: ["Python", "TypeScript (ES6+)", "JavaScript", "Java", "SQL", "C++", "HTML/CSS"],
     pillars: ["backend", "devops", "ml-ai"],
   },
   {
@@ -27,16 +27,27 @@ export const skills: SkillGroup[] = [
     pillars: ["backend"],
   },
   {
-    category: "AI & ML",
+    category: "LLMs, RAG & Agents",
     items: [
-      "LangChain", "LlamaIndex", "LLM Agent Systems", "RAG Pipelines", "Prompt Engineering",
-      "ChromaDB", "Qdrant", "HuggingFace", "Sentence Transformers", "PyTorch",
+      "LangChain", "LlamaIndex", "LLM Agent Systems", "Agentic AI", "RAG Pipelines",
+      "Prompt Engineering", "Fine-Tuning", "Transfer Learning",
+      "ChromaDB", "Qdrant", "HuggingFace", "Sentence Transformers", "Word Embeddings",
       "Llama 3.1", "Qwen 2.5",
       "Claude Code (Anthropic)", "Cursor", "Inngest",
-      "Scikit-learn", "Keras", "Transfer Learning", "Fine-Tuning",
-      "MLOps (Model Registry, Drift Detection)",
-      "Anomaly Detection", "NLP (NLTK, spaCy)", "Classification & Regression",
-      "Model Evaluation & Selection",
+    ],
+    pillars: ["ml-ai"],
+  },
+  {
+    category: "Machine Learning & NLP",
+    items: [
+      "Scikit-learn", "PyTorch", "Keras",
+      "Deep Learning", "Neural Networks",
+      "Feature Engineering", "Hyperparameter Tuning (GridSearchCV)", "Cross-Validation",
+      "Ensemble Methods", "Random Forest", "Gradient Boosting",
+      "Classification & Regression", "Anomaly Detection",
+      "Model Evaluation & Selection", "MLOps (Model Registry, Drift Detection)",
+      "NLP (NLTK, spaCy)", "Text Classification", "Sentiment Analysis",
+      "Named Entity Recognition", "TF-IDF", "Tokenization", "Transformers",
     ],
     pillars: ["ml-ai"],
   },

@@ -5,11 +5,8 @@ export const skillIconMap: Record<string, { slug: string; color: string }> = {
   "TypeScript (ES6+)": { slug: "typescript", color: "3178C6" },
   "JavaScript": { slug: "javascript", color: "F7DF1E" },
   "Java": { slug: "openjdk", color: "ED8B00" },
-  "C#": { slug: "csharp", color: "512BD4" },
-  ".NET": { slug: "dotnet", color: "512BD4" },
   "C++": { slug: "cplusplus", color: "00599C" },
   "HTML/CSS": { slug: "html5", color: "E34F26" },
-  "R": { slug: "r", color: "276DC3" },
 
   // Frontend
   "React.js": { slug: "react", color: "61DAFB" },

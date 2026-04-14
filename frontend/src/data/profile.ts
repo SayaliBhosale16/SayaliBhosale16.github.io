@@ -24,7 +24,7 @@ interface Profile {
 
 export const profile: Profile = {
   name: "Sayali Sanjeevkumar Bhosale",
-  tagline: "Full-Stack Engineer · AI Engineer · 2+ YOE",
+  tagline: "Full-Stack Engineer · AI Engineer · 3 YOE",
   bio: "Full-stack Software Engineer shipping TypeScript + Python products at startup velocity. Fluent in AI-accelerated development — not just autocomplete, but agentic end-to-end implementation.",
   email: "sayalibh2212@gmail.com",
   phone: "+1-407-574-1752",

@@ -70,7 +70,7 @@ export function Hero() {
           className="text-xs tracking-[0.3em] uppercase mb-8 animate-fade-in"
           style={{ color: "var(--accent)" }}
         >
-          Full-Stack Engineer · AI Engineer · 2+ YOE
+          Full-Stack Engineer · AI Engineer · 3 YOE
         </p>
 
         {/* Name */}
